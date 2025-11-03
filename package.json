@@ -1,0 +1,22 @@
+{
+  "name": "agile-planning-tool",
+  "version": "1.0.0",
+  "description": "An agile project management tool for teams",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/agile-planning-tool.git"
+  },
+  "keywords": ["agile", "project management", "scrum"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "socket.io": "^4.0.0"
+  }
+}
