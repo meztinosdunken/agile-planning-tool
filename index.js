@@ -11,7 +11,7 @@ const io = socketIo(server);
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/agile-planning-tool', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/agile-planning-tool', { useNewUrlParser: true, useUnifiedTopology: true, socketOptions: { socketTimeoutMS: 30000 } });
 
 // Sample route
 app.get('/', (req, res) => {
